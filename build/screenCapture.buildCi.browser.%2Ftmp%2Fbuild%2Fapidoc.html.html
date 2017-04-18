@@ -1,0 +1,4523 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/reacttraining/react-router#readme">react-router-dom (v4.1.1)</a>
+</h1>
+<h4>DOM bindings for React Router</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom">module react-router-dom</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-router-dom.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.BrowserRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>BrowserRouter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.HashRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>HashRouter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Link">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>Link
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.MemoryRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>MemoryRouter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.NavLink">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>NavLink
+            <span class="apidocSignatureSpan">(_ref)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Prompt">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>Prompt
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Redirect">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>Redirect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>Route
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Router">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>Router
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.StaticRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>StaticRouter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Switch">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>Switch
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.matchPath">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>matchPath
+            <span class="apidocSignatureSpan">(pathname)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.withRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>withRouter
+            <span class="apidocSignatureSpan">(Component)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>BrowserRouter.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>BrowserRouter.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>HashRouter.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>HashRouter.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Link.contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Link.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Link.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>MemoryRouter.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>MemoryRouter.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Prompt.contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Prompt.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Prompt.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Redirect.contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Redirect.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Redirect.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Route.childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Route.contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Route.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Route.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Router.childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Router.contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Router.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Router.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>StaticRouter.childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>StaticRouter.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>StaticRouter.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Switch.contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Switch.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>Switch.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.</span>react_router_dom</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.BrowserRouter">module react-router-dom.BrowserRouter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.BrowserRouter.BrowserRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>BrowserRouter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.BrowserRouter.propTypes">module react-router-dom.BrowserRouter.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.BrowserRouter.propTypes.basename">
+            function <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.propTypes.</span>basename
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.BrowserRouter.propTypes.children">
+            function <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.propTypes.</span>children
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.BrowserRouter.propTypes.forceRefresh">
+            function <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.propTypes.</span>forceRefresh
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.BrowserRouter.propTypes.getUserConfirmation">
+            function <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.propTypes.</span>getUserConfirmation
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.BrowserRouter.propTypes.keyLength">
+            function <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.propTypes.</span>keyLength
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.BrowserRouter.prototype">module react-router-dom.BrowserRouter.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.BrowserRouter.prototype.render">
+            function <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.HashRouter">module react-router-dom.HashRouter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.HashRouter.HashRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>HashRouter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.HashRouter.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.HashRouter.propTypes">module react-router-dom.HashRouter.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.HashRouter.propTypes.basename">
+            function <span class="apidocSignatureSpan">react-router-dom.HashRouter.propTypes.</span>basename
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.HashRouter.propTypes.children">
+            function <span class="apidocSignatureSpan">react-router-dom.HashRouter.propTypes.</span>children
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.HashRouter.propTypes.getUserConfirmation">
+            function <span class="apidocSignatureSpan">react-router-dom.HashRouter.propTypes.</span>getUserConfirmation
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.HashRouter.propTypes.hashType">
+            function <span class="apidocSignatureSpan">react-router-dom.HashRouter.propTypes.</span>hashType
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.HashRouter.prototype">module react-router-dom.HashRouter.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.HashRouter.prototype.render">
+            function <span class="apidocSignatureSpan">react-router-dom.HashRouter.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Link">module react-router-dom.Link</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Link.Link">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>Link
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Link.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Link.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Link.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Link.contextTypes">module react-router-dom.Link.contextTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Link.contextTypes.router">
+            function <span class="apidocSignatureSpan">react-router-dom.Link.contextTypes.</span>router
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Link.propTypes">module react-router-dom.Link.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Link.propTypes.onClick">
+            function <span class="apidocSignatureSpan">react-router-dom.Link.propTypes.</span>onClick
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Link.propTypes.replace">
+            function <span class="apidocSignatureSpan">react-router-dom.Link.propTypes.</span>replace
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Link.propTypes.target">
+            function <span class="apidocSignatureSpan">react-router-dom.Link.propTypes.</span>target
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Link.propTypes.to">
+            function <span class="apidocSignatureSpan">react-router-dom.Link.propTypes.</span>to
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Link.prototype">module react-router-dom.Link.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Link.prototype.render">
+            function <span class="apidocSignatureSpan">react-router-dom.Link.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.MemoryRouter">module react-router-dom.MemoryRouter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.MemoryRouter.MemoryRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>MemoryRouter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.MemoryRouter.propTypes">module react-router-dom.MemoryRouter.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.MemoryRouter.propTypes.children">
+            function <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.propTypes.</span>children
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.MemoryRouter.propTypes.getUserConfirmation">
+            function <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.propTypes.</span>getUserConfirmation
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.MemoryRouter.propTypes.initialEntries">
+            function <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.propTypes.</span>initialEntries
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.MemoryRouter.propTypes.initialIndex">
+            function <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.propTypes.</span>initialIndex
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.MemoryRouter.propTypes.keyLength">
+            function <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.propTypes.</span>keyLength
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.MemoryRouter.prototype">module react-router-dom.MemoryRouter.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.MemoryRouter.prototype.render">
+            function <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.NavLink">module react-router-dom.NavLink</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-router-dom.NavLink.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.NavLink.default">
+            function <span class="apidocSignatureSpan">react-router-dom.NavLink.</span>default
+            <span class="apidocSignatureSpan">(_ref)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Prompt">module react-router-dom.Prompt</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Prompt.Prompt">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>Prompt
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Prompt.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Prompt.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Prompt.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Prompt.contextTypes">module react-router-dom.Prompt.contextTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Prompt.contextTypes.router">
+            function <span class="apidocSignatureSpan">react-router-dom.Prompt.contextTypes.</span>router
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Prompt.propTypes">module react-router-dom.Prompt.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Prompt.propTypes.message">
+            function <span class="apidocSignatureSpan">react-router-dom.Prompt.propTypes.</span>message
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Prompt.propTypes.when">
+            function <span class="apidocSignatureSpan">react-router-dom.Prompt.propTypes.</span>when
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Prompt.prototype">module react-router-dom.Prompt.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Prompt.prototype.componentWillMount">
+            function <span class="apidocSignatureSpan">react-router-dom.Prompt.prototype.</span>componentWillMount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Prompt.prototype.componentWillReceiveProps">
+            function <span class="apidocSignatureSpan">react-router-dom.Prompt.prototype.</span>componentWillReceiveProps
+            <span class="apidocSignatureSpan">(nextProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Prompt.prototype.componentWillUnmount">
+            function <span class="apidocSignatureSpan">react-router-dom.Prompt.prototype.</span>componentWillUnmount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Prompt.prototype.disable">
+            function <span class="apidocSignatureSpan">react-router-dom.Prompt.prototype.</span>disable
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Prompt.prototype.enable">
+            function <span class="apidocSignatureSpan">react-router-dom.Prompt.prototype.</span>enable
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Prompt.prototype.render">
+            function <span class="apidocSignatureSpan">react-router-dom.Prompt.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Redirect">module react-router-dom.Redirect</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Redirect.Redirect">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>Redirect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Redirect.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Redirect.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Redirect.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Redirect.contextTypes">module react-router-dom.Redirect.contextTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Redirect.contextTypes.router">
+            function <span class="apidocSignatureSpan">react-router-dom.Redirect.contextTypes.</span>router
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Redirect.propTypes">module react-router-dom.Redirect.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Redirect.propTypes.from">
+            function <span class="apidocSignatureSpan">react-router-dom.Redirect.propTypes.</span>from
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Redirect.propTypes.push">
+            function <span class="apidocSignatureSpan">react-router-dom.Redirect.propTypes.</span>push
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Redirect.propTypes.to">
+            function <span class="apidocSignatureSpan">react-router-dom.Redirect.propTypes.</span>to
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Redirect.prototype">module react-router-dom.Redirect.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Redirect.prototype.componentDidMount">
+            function <span class="apidocSignatureSpan">react-router-dom.Redirect.prototype.</span>componentDidMount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Redirect.prototype.componentWillMount">
+            function <span class="apidocSignatureSpan">react-router-dom.Redirect.prototype.</span>componentWillMount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Redirect.prototype.isStatic">
+            function <span class="apidocSignatureSpan">react-router-dom.Redirect.prototype.</span>isStatic
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Redirect.prototype.perform">
+            function <span class="apidocSignatureSpan">react-router-dom.Redirect.prototype.</span>perform
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Redirect.prototype.render">
+            function <span class="apidocSignatureSpan">react-router-dom.Redirect.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Route">module react-router-dom.Route</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.Route">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>Route
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Route.</span>childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Route.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Route.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Route.childContextTypes">module react-router-dom.Route.childContextTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.childContextTypes.router">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.childContextTypes.</span>router
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Route.contextTypes">module react-router-dom.Route.contextTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.contextTypes.router">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.contextTypes.</span>router
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Route.propTypes">module react-router-dom.Route.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.propTypes.children">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>children
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.propTypes.component">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>component
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.propTypes.computedMatch">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>computedMatch
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.propTypes.exact">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>exact
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.propTypes.location">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>location
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.propTypes.path">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>path
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.propTypes.render">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.propTypes.strict">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>strict
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Route.prototype">module react-router-dom.Route.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.prototype.componentWillMount">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.prototype.</span>componentWillMount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.prototype.componentWillReceiveProps">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.prototype.</span>componentWillReceiveProps
+            <span class="apidocSignatureSpan">(nextProps, nextContext)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.prototype.computeMatch">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.prototype.</span>computeMatch
+            <span class="apidocSignatureSpan">(_ref, _ref2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.prototype.getChildContext">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.prototype.</span>getChildContext
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Route.prototype.render">
+            function <span class="apidocSignatureSpan">react-router-dom.Route.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Router">module react-router-dom.Router</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Router.Router">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>Router
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Router.</span>childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Router.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Router.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Router.childContextTypes">module react-router-dom.Router.childContextTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Router.childContextTypes.router">
+            function <span class="apidocSignatureSpan">react-router-dom.Router.childContextTypes.</span>router
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Router.contextTypes">module react-router-dom.Router.contextTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Router.contextTypes.router">
+            function <span class="apidocSignatureSpan">react-router-dom.Router.contextTypes.</span>router
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Router.propTypes">module react-router-dom.Router.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Router.propTypes.children">
+            function <span class="apidocSignatureSpan">react-router-dom.Router.propTypes.</span>children
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Router.propTypes.history">
+            function <span class="apidocSignatureSpan">react-router-dom.Router.propTypes.</span>history
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Router.prototype">module react-router-dom.Router.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Router.prototype.componentWillMount">
+            function <span class="apidocSignatureSpan">react-router-dom.Router.prototype.</span>componentWillMount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Router.prototype.componentWillReceiveProps">
+            function <span class="apidocSignatureSpan">react-router-dom.Router.prototype.</span>componentWillReceiveProps
+            <span class="apidocSignatureSpan">(nextProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Router.prototype.componentWillUnmount">
+            function <span class="apidocSignatureSpan">react-router-dom.Router.prototype.</span>componentWillUnmount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Router.prototype.computeMatch">
+            function <span class="apidocSignatureSpan">react-router-dom.Router.prototype.</span>computeMatch
+            <span class="apidocSignatureSpan">(pathname)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Router.prototype.getChildContext">
+            function <span class="apidocSignatureSpan">react-router-dom.Router.prototype.</span>getChildContext
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Router.prototype.render">
+            function <span class="apidocSignatureSpan">react-router-dom.Router.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.StaticRouter">module react-router-dom.StaticRouter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.StaticRouter.StaticRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>StaticRouter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.StaticRouter.</span>childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.StaticRouter.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.StaticRouter.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.StaticRouter.childContextTypes">module react-router-dom.StaticRouter.childContextTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.StaticRouter.childContextTypes.router">
+            function <span class="apidocSignatureSpan">react-router-dom.StaticRouter.childContextTypes.</span>router
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.StaticRouter.propTypes">module react-router-dom.StaticRouter.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.StaticRouter.propTypes.basename">
+            function <span class="apidocSignatureSpan">react-router-dom.StaticRouter.propTypes.</span>basename
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.StaticRouter.propTypes.context">
+            function <span class="apidocSignatureSpan">react-router-dom.StaticRouter.propTypes.</span>context
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.StaticRouter.propTypes.location">
+            function <span class="apidocSignatureSpan">react-router-dom.StaticRouter.propTypes.</span>location
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.StaticRouter.prototype">module react-router-dom.StaticRouter.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.StaticRouter.prototype.getChildContext">
+            function <span class="apidocSignatureSpan">react-router-dom.StaticRouter.prototype.</span>getChildContext
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.StaticRouter.prototype.render">
+            function <span class="apidocSignatureSpan">react-router-dom.StaticRouter.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Switch">module react-router-dom.Switch</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Switch.Switch">
+            function <span class="apidocSignatureSpan">react-router-dom.</span>Switch
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Switch.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-router-dom.Switch.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Switch.contextTypes">module react-router-dom.Switch.contextTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Switch.contextTypes.router">
+            function <span class="apidocSignatureSpan">react-router-dom.Switch.contextTypes.</span>router
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Switch.propTypes">module react-router-dom.Switch.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Switch.propTypes.children">
+            function <span class="apidocSignatureSpan">react-router-dom.Switch.propTypes.</span>children
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Switch.propTypes.location">
+            function <span class="apidocSignatureSpan">react-router-dom.Switch.propTypes.</span>location
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.Switch.prototype">module react-router-dom.Switch.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Switch.prototype.componentWillReceiveProps">
+            function <span class="apidocSignatureSpan">react-router-dom.Switch.prototype.</span>componentWillReceiveProps
+            <span class="apidocSignatureSpan">(nextProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.Switch.prototype.render">
+            function <span class="apidocSignatureSpan">react-router-dom.Switch.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.matchPath">module react-router-dom.matchPath</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-router-dom.matchPath.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.matchPath.default">
+            function <span class="apidocSignatureSpan">react-router-dom.matchPath.</span>default
+            <span class="apidocSignatureSpan">(pathname)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.react_router_dom">module react-router-dom.react_router_dom</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.BrowserRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>BrowserRouter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.HashRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>HashRouter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.Link">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>Link
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.MemoryRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>MemoryRouter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.NavLink">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>NavLink
+            <span class="apidocSignatureSpan">(_ref)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.Prompt">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>Prompt
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.Redirect">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>Redirect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.Route">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>Route
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.Router">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>Router
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.StaticRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>StaticRouter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.Switch">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>Switch
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.matchPath">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>matchPath
+            <span class="apidocSignatureSpan">(pathname)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.react_router_dom.withRouter">
+            function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>withRouter
+            <span class="apidocSignatureSpan">(Component)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-router-dom.withRouter">module react-router-dom.withRouter</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-router-dom.withRouter.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-router-dom.withRouter.default">
+            function <span class="apidocSignatureSpan">react-router-dom.withRouter.</span>default
+            <span class="apidocSignatureSpan">(Component)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom" id="apidoc.module.react-router-dom">module react-router-dom</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.BrowserRouter" id="apidoc.element.react-router-dom.BrowserRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>BrowserRouter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BrowserRouter() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, BrowserRouter);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.history = (0, _createBrowserHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.HashRouter" id="apidoc.element.react-router-dom.HashRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>HashRouter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HashRouter() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, HashRouter);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.history = (0, _createHashHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Link" id="apidoc.element.react-router-dom.Link">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>Link
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Link() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, Link);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.handleClick = function (event) {
+    if (_this.props.onClick) _this.props.onClick(event);
+
+    if (!event.defaultPrevented &amp;&amp; // onClick prevented default
+    event.button === 0 &amp;&amp; // ignore right clicks
+    !_this.props.target &amp;&amp; // let browser handle "target=_blank" etc.
+    !isModifiedEvent(event) // ignore clicks with modifier keys
+    ) {
+        event.preventDefault();
+
+        var history = _this.context.router.history;
+        var _this$props = _this.props,
+            replace = _this$props.replace,
+            to = _this$props.to;
+
+
+        if (replace) {
+          history.replace(to);
+        } else {
+          history.push(to);
+        }
+      }
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.MemoryRouter" id="apidoc.element.react-router-dom.MemoryRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>MemoryRouter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MemoryRouter() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, MemoryRouter);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.history = (0, _createMemoryHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.NavLink" id="apidoc.element.react-router-dom.NavLink">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>NavLink
+        <span class="apidocSignatureSpan">(_ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NavLink(_ref) {
+  var to = _ref.to,
+      exact = _ref.exact,
+      strict = _ref.strict,
+      location = _ref.location,
+      activeClassName = _ref.activeClassName,
+      className = _ref.className,
+      activeStyle = _ref.activeStyle,
+      style = _ref.style,
+      getIsActive = _ref.isActive,
+      rest = _objectWithoutProperties(_ref, ['to', 'exact', 'strict', 'location', 'activeClassName', 'className', 'activeStyle', '
+style', 'isActive']);
+
+  return _react2.default.createElement(_reactRouter.Route, {
+    path: (typeof to === 'undefined' ? 'undefined' : _typeof(to)) === 'object' ? to.pathname : to,
+    exact: exact,
+    strict: strict,
+    location: location,
+    children: function children(_ref2) {
+      var location = _ref2.location,
+          match = _ref2.match;
+
+      var isActive = !!(getIsActive ? getIsActive(match, location) : match);
+
+      return _react2.default.createElement(_Link2.default, _extends({
+        to: to,
+        className: isActive ? [activeClassName, className].filter(function (i) {
+          return i;
+        }).join(' ') : className,
+        style: isActive ? _extends({}, style, activeStyle) : style
+      }, rest));
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Prompt" id="apidoc.element.react-router-dom.Prompt">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>Prompt
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Prompt() {
+  _classCallCheck(this, Prompt);
+
+  return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Redirect" id="apidoc.element.react-router-dom.Redirect">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>Redirect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Redirect() {
+  _classCallCheck(this, Redirect);
+
+  return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route" id="apidoc.element.react-router-dom.Route">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>Route
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Route() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, Route);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.state = {
+    match: _this.computeMatch(_this.props, _this.context.router)
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Router" id="apidoc.element.react-router-dom.Router">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>Router
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Router() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, Router);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.state = {
+    match: _this.computeMatch(_this.props.history.location.pathname)
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.StaticRouter" id="apidoc.element.react-router-dom.StaticRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>StaticRouter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StaticRouter() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, StaticRouter);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.createHref = function (path) {
+    return (0, _PathUtils.addLeadingSlash)(_this.props.basename + createURL(path));
+  }, _this.handlePush = function (location) {
+    var _this$props = _this.props,
+        basename = _this$props.basename,
+        context = _this$props.context;
+
+    context.action = 'PUSH';
+    context.location = addBasename(basename, createLocation(location));
+    context.url = createURL(context.location);
+  }, _this.handleReplace = function (location) {
+    var _this$props2 = _this.props,
+        basename = _this$props2.basename,
+        context = _this$props2.context;
+
+    context.action = 'REPLACE';
+    context.location = addBasename(basename, createLocation(location));
+    context.url = createURL(context.location);
+  }, _this.handleListen = function () {
+    return noop;
+  }, _this.handleBlock = function () {
+    return noop;
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Switch" id="apidoc.element.react-router-dom.Switch">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>Switch
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Switch() {
+  _classCallCheck(this, Switch);
+
+  return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.matchPath" id="apidoc.element.react-router-dom.matchPath">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>matchPath
+        <span class="apidocSignatureSpan">(pathname)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function matchPath(pathname) {
+  var options = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
+
+  if (typeof options === 'string') options = { path: options };
+
+  var _options = options,
+      _options$path = _options.path,
+      path = _options$path === undefined ? '/' : _options$path,
+      _options$exact = _options.exact,
+      exact = _options$exact === undefined ? false : _options$exact,
+      _options$strict = _options.strict,
+      strict = _options$strict === undefined ? false : _options$strict;
+
+  var _compilePath = compilePath(path, { end: exact, strict: strict }),
+      re = _compilePath.re,
+      keys = _compilePath.keys;
+
+  var match = re.exec(pathname);
+
+  if (!match) return null;
+
+  var url = match[0],
+      values = match.slice(1);
+
+  var isExact = pathname === url;
+
+  if (exact &amp;&amp; !isExact) return null;
+
+  return {
+    path: path, // the path pattern used to match
+    url: path === '/' &amp;&amp; url === '' ? '/' : url, // the matched portion of the URL
+    isExact: isExact, // whether or not we matched exactly
+    params: keys.reduce(function (memo, key, index) {
+      memo[key.name] = values[index];
+      return memo;
+    }, {})
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.withRouter" id="apidoc.element.react-router-dom.withRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>withRouter
+        <span class="apidocSignatureSpan">(Component)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function withRouter(Component) {
+  var C = function C(props) {
+    var wrappedComponentRef = props.wrappedComponentRef,
+        remainingProps = _objectWithoutProperties(props, ['wrappedComponentRef']);
+
+    return _react2.default.createElement(_Route2.default, { render: function render(routeComponentProps) {
+        return _react2.default.createElement(Component, _extends({}, remainingProps, routeComponentProps, { ref: wrappedComponentRef
+ }));
+      } });
+  };
+
+  C.displayName = 'withRouter(' + (Component.displayName || Component.name) + ')';
+  C.WrappedComponent = Component;
+  C.propTypes = {
+    wrappedComponentRef: _propTypes2.default.func
+  };
+
+  return (0, _hoistNonReactStatics2.default)(C, Component);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.BrowserRouter" id="apidoc.module.react-router-dom.BrowserRouter">module react-router-dom.BrowserRouter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.BrowserRouter.BrowserRouter" id="apidoc.element.react-router-dom.BrowserRouter.BrowserRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>BrowserRouter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BrowserRouter() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, BrowserRouter);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.history = (0, _createBrowserHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.BrowserRouter.propTypes" id="apidoc.module.react-router-dom.BrowserRouter.propTypes">module react-router-dom.BrowserRouter.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.BrowserRouter.propTypes.basename" id="apidoc.element.react-router-dom.BrowserRouter.propTypes.basename">
+        function <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.propTypes.</span>basename
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">basename = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.BrowserRouter.propTypes.children" id="apidoc.element.react-router-dom.BrowserRouter.propTypes.children">
+        function <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.propTypes.</span>children
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">children = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.BrowserRouter.propTypes.forceRefresh" id="apidoc.element.react-router-dom.BrowserRouter.propTypes.forceRefresh">
+        function <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.propTypes.</span>forceRefresh
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forceRefresh = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.BrowserRouter.propTypes.getUserConfirmation" id="apidoc.element.react-router-dom.BrowserRouter.propTypes.getUserConfirmation">
+        function <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.propTypes.</span>getUserConfirmation
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getUserConfirmation = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.BrowserRouter.propTypes.keyLength" id="apidoc.element.react-router-dom.BrowserRouter.propTypes.keyLength">
+        function <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.propTypes.</span>keyLength
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keyLength = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.BrowserRouter.prototype" id="apidoc.module.react-router-dom.BrowserRouter.prototype">module react-router-dom.BrowserRouter.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.BrowserRouter.prototype.render" id="apidoc.element.react-router-dom.BrowserRouter.prototype.render">
+        function <span class="apidocSignatureSpan">react-router-dom.BrowserRouter.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  return _react2.default.createElement(_reactRouter.Router, { history: this.history, children: this.props.children });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.HashRouter" id="apidoc.module.react-router-dom.HashRouter">module react-router-dom.HashRouter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.HashRouter.HashRouter" id="apidoc.element.react-router-dom.HashRouter.HashRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>HashRouter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HashRouter() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, HashRouter);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.history = (0, _createHashHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.HashRouter.propTypes" id="apidoc.module.react-router-dom.HashRouter.propTypes">module react-router-dom.HashRouter.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.HashRouter.propTypes.basename" id="apidoc.element.react-router-dom.HashRouter.propTypes.basename">
+        function <span class="apidocSignatureSpan">react-router-dom.HashRouter.propTypes.</span>basename
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">basename = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.HashRouter.propTypes.children" id="apidoc.element.react-router-dom.HashRouter.propTypes.children">
+        function <span class="apidocSignatureSpan">react-router-dom.HashRouter.propTypes.</span>children
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">children = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.HashRouter.propTypes.getUserConfirmation" id="apidoc.element.react-router-dom.HashRouter.propTypes.getUserConfirmation">
+        function <span class="apidocSignatureSpan">react-router-dom.HashRouter.propTypes.</span>getUserConfirmation
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getUserConfirmation = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.HashRouter.propTypes.hashType" id="apidoc.element.react-router-dom.HashRouter.propTypes.hashType">
+        function <span class="apidocSignatureSpan">react-router-dom.HashRouter.propTypes.</span>hashType
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hashType = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.HashRouter.prototype" id="apidoc.module.react-router-dom.HashRouter.prototype">module react-router-dom.HashRouter.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.HashRouter.prototype.render" id="apidoc.element.react-router-dom.HashRouter.prototype.render">
+        function <span class="apidocSignatureSpan">react-router-dom.HashRouter.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  return _react2.default.createElement(_reactRouter.Router, { history: this.history, children: this.props.children });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Link" id="apidoc.module.react-router-dom.Link">module react-router-dom.Link</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Link.Link" id="apidoc.element.react-router-dom.Link.Link">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>Link
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Link() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, Link);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.handleClick = function (event) {
+    if (_this.props.onClick) _this.props.onClick(event);
+
+    if (!event.defaultPrevented &amp;&amp; // onClick prevented default
+    event.button === 0 &amp;&amp; // ignore right clicks
+    !_this.props.target &amp;&amp; // let browser handle "target=_blank" etc.
+    !isModifiedEvent(event) // ignore clicks with modifier keys
+    ) {
+        event.preventDefault();
+
+        var history = _this.context.router.history;
+        var _this$props = _this.props,
+            replace = _this$props.replace,
+            to = _this$props.to;
+
+
+        if (replace) {
+          history.replace(to);
+        } else {
+          history.push(to);
+        }
+      }
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Link.contextTypes" id="apidoc.module.react-router-dom.Link.contextTypes">module react-router-dom.Link.contextTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Link.contextTypes.router" id="apidoc.element.react-router-dom.Link.contextTypes.router">
+        function <span class="apidocSignatureSpan">react-router-dom.Link.contextTypes.</span>router
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">router = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Link.propTypes" id="apidoc.module.react-router-dom.Link.propTypes">module react-router-dom.Link.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Link.propTypes.onClick" id="apidoc.element.react-router-dom.Link.propTypes.onClick">
+        function <span class="apidocSignatureSpan">react-router-dom.Link.propTypes.</span>onClick
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onClick = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    _classCallCheck(this, Link);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat
+(args))), _this), _this.handleClick = function (event) {
+if (_this.props.onClick) _this.props.<span class="apidocCodeKeywordSpan">onClick</span>(event);
+
+if (!event.defaultPrevented &amp;&amp; // onClick prevented default
+event.button === 0 &amp;&amp; // ignore right clicks
+!_this.props.target &amp;&amp; // let browser handle "target=_blank" etc.
+!isModifiedEvent(event) // ignore clicks with modifier keys
+) {
+    event.preventDefault();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Link.propTypes.replace" id="apidoc.element.react-router-dom.Link.propTypes.replace">
+        function <span class="apidocSignatureSpan">react-router-dom.Link.propTypes.</span>replace
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replace = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        var history = _this.context.router.history;
+        var _this$props = _this.props,
+            replace = _this$props.replace,
+            to = _this$props.to;
+
+
+        if (replace) {
+          history.<span class="apidocCodeKeywordSpan">replace</span>(to);
+        } else {
+          history.push(to);
+        }
+      }
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Link.propTypes.target" id="apidoc.element.react-router-dom.Link.propTypes.target">
+        function <span class="apidocSignatureSpan">react-router-dom.Link.propTypes.</span>target
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">target = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Link.propTypes.to" id="apidoc.element.react-router-dom.Link.propTypes.to">
+        function <span class="apidocSignatureSpan">react-router-dom.Link.propTypes.</span>to
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">to = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Link.prototype" id="apidoc.module.react-router-dom.Link.prototype">module react-router-dom.Link.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Link.prototype.render" id="apidoc.element.react-router-dom.Link.prototype.render">
+        function <span class="apidocSignatureSpan">react-router-dom.Link.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  var _props = this.props,
+      replace = _props.replace,
+      to = _props.to,
+      props = _objectWithoutProperties(_props, ['replace', 'to']); // eslint-disable-line no-unused-vars
+
+  var href = this.context.router.history.createHref(typeof to === 'string' ? { pathname: to } : to);
+
+  return _react2.default.createElement('a', _extends({}, props, { onClick: this.handleClick, href: href }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.MemoryRouter" id="apidoc.module.react-router-dom.MemoryRouter">module react-router-dom.MemoryRouter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.MemoryRouter.MemoryRouter" id="apidoc.element.react-router-dom.MemoryRouter.MemoryRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>MemoryRouter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MemoryRouter() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, MemoryRouter);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.history = (0, _createMemoryHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.MemoryRouter.propTypes" id="apidoc.module.react-router-dom.MemoryRouter.propTypes">module react-router-dom.MemoryRouter.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.MemoryRouter.propTypes.children" id="apidoc.element.react-router-dom.MemoryRouter.propTypes.children">
+        function <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.propTypes.</span>children
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">children = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.MemoryRouter.propTypes.getUserConfirmation" id="apidoc.element.react-router-dom.MemoryRouter.propTypes.getUserConfirmation">
+        function <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.propTypes.</span>getUserConfirmation
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getUserConfirmation = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.MemoryRouter.propTypes.initialEntries" id="apidoc.element.react-router-dom.MemoryRouter.propTypes.initialEntries">
+        function <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.propTypes.</span>initialEntries
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialEntries = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.MemoryRouter.propTypes.initialIndex" id="apidoc.element.react-router-dom.MemoryRouter.propTypes.initialIndex">
+        function <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.propTypes.</span>initialIndex
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialIndex = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.MemoryRouter.propTypes.keyLength" id="apidoc.element.react-router-dom.MemoryRouter.propTypes.keyLength">
+        function <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.propTypes.</span>keyLength
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keyLength = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.MemoryRouter.prototype" id="apidoc.module.react-router-dom.MemoryRouter.prototype">module react-router-dom.MemoryRouter.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.MemoryRouter.prototype.render" id="apidoc.element.react-router-dom.MemoryRouter.prototype.render">
+        function <span class="apidocSignatureSpan">react-router-dom.MemoryRouter.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  return _react2.default.createElement(_Router2.default, { history: this.history, children: this.props.children });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.NavLink" id="apidoc.module.react-router-dom.NavLink">module react-router-dom.NavLink</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.NavLink.default" id="apidoc.element.react-router-dom.NavLink.default">
+        function <span class="apidocSignatureSpan">react-router-dom.NavLink.</span>default
+        <span class="apidocSignatureSpan">(_ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NavLink(_ref) {
+  var to = _ref.to,
+      exact = _ref.exact,
+      strict = _ref.strict,
+      location = _ref.location,
+      activeClassName = _ref.activeClassName,
+      className = _ref.className,
+      activeStyle = _ref.activeStyle,
+      style = _ref.style,
+      getIsActive = _ref.isActive,
+      rest = _objectWithoutProperties(_ref, ['to', 'exact', 'strict', 'location', 'activeClassName', 'className', 'activeStyle', '
+style', 'isActive']);
+
+  return _react2.default.createElement(_reactRouter.Route, {
+    path: (typeof to === 'undefined' ? 'undefined' : _typeof(to)) === 'object' ? to.pathname : to,
+    exact: exact,
+    strict: strict,
+    location: location,
+    children: function children(_ref2) {
+      var location = _ref2.location,
+          match = _ref2.match;
+
+      var isActive = !!(getIsActive ? getIsActive(match, location) : match);
+
+      return _react2.default.createElement(_Link2.default, _extends({
+        to: to,
+        className: isActive ? [activeClassName, className].filter(function (i) {
+          return i;
+        }).join(' ') : className,
+        style: isActive ? _extends({}, style, activeStyle) : style
+      }, rest));
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Prompt" id="apidoc.module.react-router-dom.Prompt">module react-router-dom.Prompt</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Prompt.Prompt" id="apidoc.element.react-router-dom.Prompt.Prompt">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>Prompt
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Prompt() {
+  _classCallCheck(this, Prompt);
+
+  return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Prompt.contextTypes" id="apidoc.module.react-router-dom.Prompt.contextTypes">module react-router-dom.Prompt.contextTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Prompt.contextTypes.router" id="apidoc.element.react-router-dom.Prompt.contextTypes.router">
+        function <span class="apidocSignatureSpan">react-router-dom.Prompt.contextTypes.</span>router
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">router = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Prompt.propTypes" id="apidoc.module.react-router-dom.Prompt.propTypes">module react-router-dom.Prompt.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Prompt.propTypes.message" id="apidoc.element.react-router-dom.Prompt.propTypes.message">
+        function <span class="apidocSignatureSpan">react-router-dom.Prompt.propTypes.</span>message
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">message = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Prompt.propTypes.when" id="apidoc.element.react-router-dom.Prompt.propTypes.when">
+        function <span class="apidocSignatureSpan">react-router-dom.Prompt.propTypes.</span>when
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">when = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Prompt.prototype" id="apidoc.module.react-router-dom.Prompt.prototype">module react-router-dom.Prompt.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Prompt.prototype.componentWillMount" id="apidoc.element.react-router-dom.Prompt.prototype.componentWillMount">
+        function <span class="apidocSignatureSpan">react-router-dom.Prompt.prototype.</span>componentWillMount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillMount() {
+  if (this.props.when) this.enable(this.props.message);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Prompt.prototype.componentWillReceiveProps" id="apidoc.element.react-router-dom.Prompt.prototype.componentWillReceiveProps">
+        function <span class="apidocSignatureSpan">react-router-dom.Prompt.prototype.</span>componentWillReceiveProps
+        <span class="apidocSignatureSpan">(nextProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillReceiveProps(nextProps) {
+  if (nextProps.when) {
+    if (!this.props.when || this.props.message !== nextProps.message) this.enable(nextProps.message);
+  } else {
+    this.disable();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Prompt.prototype.componentWillUnmount" id="apidoc.element.react-router-dom.Prompt.prototype.componentWillUnmount">
+        function <span class="apidocSignatureSpan">react-router-dom.Prompt.prototype.</span>componentWillUnmount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillUnmount() {
+  this.disable();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Prompt.prototype.disable" id="apidoc.element.react-router-dom.Prompt.prototype.disable">
+        function <span class="apidocSignatureSpan">react-router-dom.Prompt.prototype.</span>disable
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function disable() {
+  if (this.unblock) {
+    this.unblock();
+    this.unblock = null;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	    if (this.props.when) this.enable(this.props.message);
+	  };
+
+	  Prompt.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+	    if (nextProps.when) {
+	      if (!this.props.when || this.props.message !== nextProps.message) this.enable(nextProps.message);
+	    } else {
+	      this.<span class="apidocCodeKeywordSpan">disable</span>();
+	    }
+	  };
+
+	  Prompt.prototype.componentWillUnmount = function componentWillUnmount() {
+	    this.disable();
+	  };
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Prompt.prototype.enable" id="apidoc.element.react-router-dom.Prompt.prototype.enable">
+        function <span class="apidocSignatureSpan">react-router-dom.Prompt.prototype.</span>enable
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function enable(message) {
+  if (this.unblock) this.unblock();
+
+  this.unblock = this.context.router.history.block(message);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	    if (this.unblock) {
+	      this.unblock();
+	      this.unblock = null;
+	    }
+	  };
+
+	  Prompt.prototype.componentWillMount = function componentWillMount() {
+	    if (this.props.when) this.<span class="apidocCodeKeywordSpan">enable</span>(this.props.message);
+	  };
+
+	  Prompt.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+	    if (nextProps.when) {
+	      if (!this.props.when || this.props.message !== nextProps.message) this.enable(nextProps.message);
+	    } else {
+	      this.disable();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Prompt.prototype.render" id="apidoc.element.react-router-dom.Prompt.prototype.render">
+        function <span class="apidocSignatureSpan">react-router-dom.Prompt.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Redirect" id="apidoc.module.react-router-dom.Redirect">module react-router-dom.Redirect</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Redirect.Redirect" id="apidoc.element.react-router-dom.Redirect.Redirect">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>Redirect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Redirect() {
+  _classCallCheck(this, Redirect);
+
+  return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Redirect.contextTypes" id="apidoc.module.react-router-dom.Redirect.contextTypes">module react-router-dom.Redirect.contextTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Redirect.contextTypes.router" id="apidoc.element.react-router-dom.Redirect.contextTypes.router">
+        function <span class="apidocSignatureSpan">react-router-dom.Redirect.contextTypes.</span>router
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">router = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Redirect.propTypes" id="apidoc.module.react-router-dom.Redirect.propTypes">module react-router-dom.Redirect.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Redirect.propTypes.from" id="apidoc.element.react-router-dom.Redirect.propTypes.from">
+        function <span class="apidocSignatureSpan">react-router-dom.Redirect.propTypes.</span>from
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">from = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Redirect.propTypes.push" id="apidoc.element.react-router-dom.Redirect.propTypes.push">
+        function <span class="apidocSignatureSpan">react-router-dom.Redirect.propTypes.</span>push
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">push = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+            replace = _this$props.replace,
+            to = _this$props.to;
+
+
+        if (replace) {
+          history.replace(to);
+        } else {
+          history.<span class="apidocCodeKeywordSpan">push</span>(to);
+        }
+      }
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+
+Link.prototype.render = function render() {
+  var _props = this.props,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Redirect.propTypes.to" id="apidoc.element.react-router-dom.Redirect.propTypes.to">
+        function <span class="apidocSignatureSpan">react-router-dom.Redirect.propTypes.</span>to
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">to = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Redirect.prototype" id="apidoc.module.react-router-dom.Redirect.prototype">module react-router-dom.Redirect.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Redirect.prototype.componentDidMount" id="apidoc.element.react-router-dom.Redirect.prototype.componentDidMount">
+        function <span class="apidocSignatureSpan">react-router-dom.Redirect.prototype.</span>componentDidMount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentDidMount() {
+  if (!this.isStatic()) this.perform();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Redirect.prototype.componentWillMount" id="apidoc.element.react-router-dom.Redirect.prototype.componentWillMount">
+        function <span class="apidocSignatureSpan">react-router-dom.Redirect.prototype.</span>componentWillMount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillMount() {
+  if (this.isStatic()) this.perform();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Redirect.prototype.isStatic" id="apidoc.element.react-router-dom.Redirect.prototype.isStatic">
+        function <span class="apidocSignatureSpan">react-router-dom.Redirect.prototype.</span>isStatic
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isStatic() {
+  return this.context.router &amp;&amp; this.context.router.staticContext;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	  }
+
+	  Redirect.prototype.isStatic = function isStatic() {
+	    return this.context.router &amp;&amp; this.context.router.staticContext;
+	  };
+
+	  Redirect.prototype.componentWillMount = function componentWillMount() {
+	    if (this.<span class="apidocCodeKeywordSpan">isStatic</span>()) this.perform();
+	  };
+
+	  Redirect.prototype.componentDidMount = function componentDidMount() {
+	    if (!this.isStatic()) this.perform();
+	  };
+
+	  Redirect.prototype.perform = function perform() {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Redirect.prototype.perform" id="apidoc.element.react-router-dom.Redirect.prototype.perform">
+        function <span class="apidocSignatureSpan">react-router-dom.Redirect.prototype.</span>perform
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function perform() {
+  var history = this.context.router.history;
+  var _props = this.props,
+      push = _props.push,
+      to = _props.to;
+
+
+  if (push) {
+    history.push(to);
+  } else {
+    history.replace(to);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	  }
+
+	  Redirect.prototype.isStatic = function isStatic() {
+	    return this.context.router &amp;&amp; this.context.router.staticContext;
+	  };
+
+	  Redirect.prototype.componentWillMount = function componentWillMount() {
+	    if (this.isStatic()) this.<span class="apidocCodeKeywordSpan">perform</span>();
+	  };
+
+	  Redirect.prototype.componentDidMount = function componentDidMount() {
+	    if (!this.isStatic()) this.perform();
+	  };
+
+	  Redirect.prototype.perform = function perform() {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Redirect.prototype.render" id="apidoc.element.react-router-dom.Redirect.prototype.render">
+        function <span class="apidocSignatureSpan">react-router-dom.Redirect.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Route" id="apidoc.module.react-router-dom.Route">module react-router-dom.Route</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.Route" id="apidoc.element.react-router-dom.Route.Route">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>Route
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Route() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, Route);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.state = {
+    match: _this.computeMatch(_this.props, _this.context.router)
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Route.childContextTypes" id="apidoc.module.react-router-dom.Route.childContextTypes">module react-router-dom.Route.childContextTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.childContextTypes.router" id="apidoc.element.react-router-dom.Route.childContextTypes.router">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.childContextTypes.</span>router
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">router = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Route.contextTypes" id="apidoc.module.react-router-dom.Route.contextTypes">module react-router-dom.Route.contextTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.contextTypes.router" id="apidoc.element.react-router-dom.Route.contextTypes.router">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.contextTypes.</span>router
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">router = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Route.propTypes" id="apidoc.module.react-router-dom.Route.propTypes">module react-router-dom.Route.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.propTypes.children" id="apidoc.element.react-router-dom.Route.propTypes.children">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>children
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">children = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.propTypes.component" id="apidoc.element.react-router-dom.Route.propTypes.component">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>component
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">component = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.propTypes.computedMatch" id="apidoc.element.react-router-dom.Route.propTypes.computedMatch">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>computedMatch
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">computedMatch = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.propTypes.exact" id="apidoc.element.react-router-dom.Route.propTypes.exact">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>exact
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">exact = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.propTypes.location" id="apidoc.element.react-router-dom.Route.propTypes.location">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>location
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">location = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.propTypes.path" id="apidoc.element.react-router-dom.Route.propTypes.path">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>path
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">path = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.propTypes.render" id="apidoc.element.react-router-dom.Route.propTypes.render">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">render = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.propTypes.strict" id="apidoc.element.react-router-dom.Route.propTypes.strict">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.propTypes.</span>strict
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">strict = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Route.prototype" id="apidoc.module.react-router-dom.Route.prototype">module react-router-dom.Route.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.prototype.componentWillMount" id="apidoc.element.react-router-dom.Route.prototype.componentWillMount">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.prototype.</span>componentWillMount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillMount() {
+  var _props = this.props,
+      component = _props.component,
+      render = _props.render,
+      children = _props.children;
+
+
+  (0, _warning2.default)(!(component &amp;&amp; render), 'You should not use &lt;Route component&gt; and &lt;Route render&gt; in the same route; &lt;Route
+ render&gt; will be ignored');
+
+  (0, _warning2.default)(!(component &amp;&amp; children), 'You should not use &lt;Route component&gt; and &lt;Route children&gt; in the same route; &lt;
+Route children&gt; will be ignored');
+
+  (0, _warning2.default)(!(render &amp;&amp; children), 'You should not use &lt;Route render&gt; and &lt;Route children&gt; in the same route; &lt;Route
+ children&gt; will be ignored');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.prototype.componentWillReceiveProps" id="apidoc.element.react-router-dom.Route.prototype.componentWillReceiveProps">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.prototype.</span>componentWillReceiveProps
+        <span class="apidocSignatureSpan">(nextProps, nextContext)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillReceiveProps(nextProps, nextContext) {
+  (0, _warning2.default)(!(nextProps.location &amp;&amp; !this.props.location), '&lt;Route&gt; elements should not change from uncontrolled to
+ controlled (or vice versa). You initially used no "location" prop and then provided one on a subsequent render.');
+
+  (0, _warning2.default)(!(!nextProps.location &amp;&amp; this.props.location), '&lt;Route&gt; elements should not change from controlled to uncontrolled
+ (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.');
+
+  this.setState({
+    match: this.computeMatch(nextProps, nextContext.router)
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.prototype.computeMatch" id="apidoc.element.react-router-dom.Route.prototype.computeMatch">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.prototype.</span>computeMatch
+        <span class="apidocSignatureSpan">(_ref, _ref2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function computeMatch(_ref, _ref2) {
+  var computedMatch = _ref.computedMatch,
+      location = _ref.location,
+      path = _ref.path,
+      strict = _ref.strict,
+      exact = _ref.exact;
+  var route = _ref2.route;
+
+  if (computedMatch) return computedMatch; // &lt;Switch&gt; already computed the match for us
+
+  var pathname = (location || route.location).pathname;
+
+  return path ? (0, _matchPath2.default)(pathname, { path: path, strict: strict, exact: exact }) : route.match;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	    _classCallCheck(this, Router);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat
+(args))), _this), _this.state = {
+	      match: _this.<span class="apidocCodeKeywordSpan">computeMatch</span>(_this.props.history.location.pathname)
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
+
+	  Router.prototype.getChildContext = function getChildContext() {
+	    return {
+	      router: _extends({}, this.context.router, {
+	        history: this.props.history,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.prototype.getChildContext" id="apidoc.element.react-router-dom.Route.prototype.getChildContext">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.prototype.</span>getChildContext
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getChildContext() {
+  return {
+    router: _extends({}, this.context.router, {
+      route: {
+        location: this.props.location || this.context.router.route.location,
+        match: this.state.match
+      }
+    })
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Route.prototype.render" id="apidoc.element.react-router-dom.Route.prototype.render">
+        function <span class="apidocSignatureSpan">react-router-dom.Route.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  var match = this.state.match;
+  var _props2 = this.props,
+      children = _props2.children,
+      component = _props2.component,
+      render = _props2.render;
+  var _context$router = this.context.router,
+      history = _context$router.history,
+      route = _context$router.route,
+      staticContext = _context$router.staticContext;
+
+  var location = this.props.location || route.location;
+  var props = { match: match, location: location, history: history, staticContext: staticContext };
+
+  return component ? // component prop gets first priority, only called if there's a match
+  match ? _react2.default.createElement(component, props) : null : render ? // render prop is next, only called if there's a match
+  match ? render(props) : null : children ? // children come last, always called
+  typeof children === 'function' ? children(props) : !Array.isArray(children) || children.length ? // Preact defaults to empty children
+ array
+  _react2.default.Children.only(children) : null : null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Router" id="apidoc.module.react-router-dom.Router">module react-router-dom.Router</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Router.Router" id="apidoc.element.react-router-dom.Router.Router">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>Router
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Router() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, Router);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.state = {
+    match: _this.computeMatch(_this.props.history.location.pathname)
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Router.childContextTypes" id="apidoc.module.react-router-dom.Router.childContextTypes">module react-router-dom.Router.childContextTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Router.childContextTypes.router" id="apidoc.element.react-router-dom.Router.childContextTypes.router">
+        function <span class="apidocSignatureSpan">react-router-dom.Router.childContextTypes.</span>router
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">router = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Router.contextTypes" id="apidoc.module.react-router-dom.Router.contextTypes">module react-router-dom.Router.contextTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Router.contextTypes.router" id="apidoc.element.react-router-dom.Router.contextTypes.router">
+        function <span class="apidocSignatureSpan">react-router-dom.Router.contextTypes.</span>router
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">router = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Router.propTypes" id="apidoc.module.react-router-dom.Router.propTypes">module react-router-dom.Router.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Router.propTypes.children" id="apidoc.element.react-router-dom.Router.propTypes.children">
+        function <span class="apidocSignatureSpan">react-router-dom.Router.propTypes.</span>children
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">children = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Router.propTypes.history" id="apidoc.element.react-router-dom.Router.propTypes.history">
+        function <span class="apidocSignatureSpan">react-router-dom.Router.propTypes.</span>history
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">history = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Router.prototype" id="apidoc.module.react-router-dom.Router.prototype">module react-router-dom.Router.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Router.prototype.componentWillMount" id="apidoc.element.react-router-dom.Router.prototype.componentWillMount">
+        function <span class="apidocSignatureSpan">react-router-dom.Router.prototype.</span>componentWillMount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillMount() {
+  var _this2 = this;
+
+  var _props = this.props,
+      children = _props.children,
+      history = _props.history;
+
+
+  (0, _invariant2.default)(children == null || _react2.default.Children.count(children) === 1, 'A &lt;Router&gt; may have only one child
+ element');
+
+  // Do this here so we can setState when a &lt;Redirect&gt; changes the
+  // location in componentWillMount. This happens e.g. when doing
+  // server rendering using a &lt;StaticRouter&gt;.
+  this.unlisten = history.listen(function () {
+    _this2.setState({
+      match: _this2.computeMatch(history.location.pathname)
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Router.prototype.componentWillReceiveProps" id="apidoc.element.react-router-dom.Router.prototype.componentWillReceiveProps">
+        function <span class="apidocSignatureSpan">react-router-dom.Router.prototype.</span>componentWillReceiveProps
+        <span class="apidocSignatureSpan">(nextProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillReceiveProps(nextProps) {
+  (0, _warning2.default)(this.props.history === nextProps.history, 'You cannot change &lt;Router history&gt;');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Router.prototype.componentWillUnmount" id="apidoc.element.react-router-dom.Router.prototype.componentWillUnmount">
+        function <span class="apidocSignatureSpan">react-router-dom.Router.prototype.</span>componentWillUnmount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillUnmount() {
+  this.unlisten();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Router.prototype.computeMatch" id="apidoc.element.react-router-dom.Router.prototype.computeMatch">
+        function <span class="apidocSignatureSpan">react-router-dom.Router.prototype.</span>computeMatch
+        <span class="apidocSignatureSpan">(pathname)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function computeMatch(pathname) {
+  return {
+    path: '/',
+    url: '/',
+    params: {},
+    isExact: pathname === '/'
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	    _classCallCheck(this, Router);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat
+(args))), _this), _this.state = {
+	      match: _this.<span class="apidocCodeKeywordSpan">computeMatch</span>(_this.props.history.location.pathname)
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
+
+	  Router.prototype.getChildContext = function getChildContext() {
+	    return {
+	      router: _extends({}, this.context.router, {
+	        history: this.props.history,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Router.prototype.getChildContext" id="apidoc.element.react-router-dom.Router.prototype.getChildContext">
+        function <span class="apidocSignatureSpan">react-router-dom.Router.prototype.</span>getChildContext
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getChildContext() {
+  return {
+    router: _extends({}, this.context.router, {
+      history: this.props.history,
+      route: {
+        location: this.props.history.location,
+        match: this.state.match
+      }
+    })
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Router.prototype.render" id="apidoc.element.react-router-dom.Router.prototype.render">
+        function <span class="apidocSignatureSpan">react-router-dom.Router.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  var children = this.props.children;
+
+  return children ? _react2.default.Children.only(children) : null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.StaticRouter" id="apidoc.module.react-router-dom.StaticRouter">module react-router-dom.StaticRouter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.StaticRouter.StaticRouter" id="apidoc.element.react-router-dom.StaticRouter.StaticRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>StaticRouter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StaticRouter() {
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, StaticRouter);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.createHref = function (path) {
+    return (0, _PathUtils.addLeadingSlash)(_this.props.basename + createURL(path));
+  }, _this.handlePush = function (location) {
+    var _this$props = _this.props,
+        basename = _this$props.basename,
+        context = _this$props.context;
+
+    context.action = 'PUSH';
+    context.location = addBasename(basename, createLocation(location));
+    context.url = createURL(context.location);
+  }, _this.handleReplace = function (location) {
+    var _this$props2 = _this.props,
+        basename = _this$props2.basename,
+        context = _this$props2.context;
+
+    context.action = 'REPLACE';
+    context.location = addBasename(basename, createLocation(location));
+    context.url = createURL(context.location);
+  }, _this.handleListen = function () {
+    return noop;
+  }, _this.handleBlock = function () {
+    return noop;
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.StaticRouter.childContextTypes" id="apidoc.module.react-router-dom.StaticRouter.childContextTypes">module react-router-dom.StaticRouter.childContextTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.StaticRouter.childContextTypes.router" id="apidoc.element.react-router-dom.StaticRouter.childContextTypes.router">
+        function <span class="apidocSignatureSpan">react-router-dom.StaticRouter.childContextTypes.</span>router
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">router = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.StaticRouter.propTypes" id="apidoc.module.react-router-dom.StaticRouter.propTypes">module react-router-dom.StaticRouter.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.StaticRouter.propTypes.basename" id="apidoc.element.react-router-dom.StaticRouter.propTypes.basename">
+        function <span class="apidocSignatureSpan">react-router-dom.StaticRouter.propTypes.</span>basename
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">basename = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.StaticRouter.propTypes.context" id="apidoc.element.react-router-dom.StaticRouter.propTypes.context">
+        function <span class="apidocSignatureSpan">react-router-dom.StaticRouter.propTypes.</span>context
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">context = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.StaticRouter.propTypes.location" id="apidoc.element.react-router-dom.StaticRouter.propTypes.location">
+        function <span class="apidocSignatureSpan">react-router-dom.StaticRouter.propTypes.</span>location
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">location = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.StaticRouter.prototype" id="apidoc.module.react-router-dom.StaticRouter.prototype">module react-router-dom.StaticRouter.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.StaticRouter.prototype.getChildContext" id="apidoc.element.react-router-dom.StaticRouter.prototype.getChildContext">
+        function <span class="apidocSignatureSpan">react-router-dom.StaticRouter.prototype.</span>getChildContext
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getChildContext() {
+  return {
+    router: {
+      staticContext: this.props.context
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.StaticRouter.prototype.render" id="apidoc.element.react-router-dom.StaticRouter.prototype.render">
+        function <span class="apidocSignatureSpan">react-router-dom.StaticRouter.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  var _props = this.props,
+      basename = _props.basename,
+      context = _props.context,
+      location = _props.location,
+      props = _objectWithoutProperties(_props, ['basename', 'context', 'location']);
+
+  var history = {
+    createHref: this.createHref,
+    action: 'POP',
+    location: stripBasename(basename, createLocation(location)),
+    push: this.handlePush,
+    replace: this.handleReplace,
+    go: staticHandler('go'),
+    goBack: staticHandler('goBack'),
+    goForward: staticHandler('goForward'),
+    listen: this.handleListen,
+    block: this.handleBlock
+  };
+
+  return _react2.default.createElement(_Router2.default, _extends({}, props, { history: history }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Switch" id="apidoc.module.react-router-dom.Switch">module react-router-dom.Switch</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Switch.Switch" id="apidoc.element.react-router-dom.Switch.Switch">
+        function <span class="apidocSignatureSpan">react-router-dom.</span>Switch
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Switch() {
+  _classCallCheck(this, Switch);
+
+  return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Switch.contextTypes" id="apidoc.module.react-router-dom.Switch.contextTypes">module react-router-dom.Switch.contextTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Switch.contextTypes.router" id="apidoc.element.react-router-dom.Switch.contextTypes.router">
+        function <span class="apidocSignatureSpan">react-router-dom.Switch.contextTypes.</span>router
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">router = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Switch.propTypes" id="apidoc.module.react-router-dom.Switch.propTypes">module react-router-dom.Switch.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Switch.propTypes.children" id="apidoc.element.react-router-dom.Switch.propTypes.children">
+        function <span class="apidocSignatureSpan">react-router-dom.Switch.propTypes.</span>children
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">children = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Switch.propTypes.location" id="apidoc.element.react-router-dom.Switch.propTypes.location">
+        function <span class="apidocSignatureSpan">react-router-dom.Switch.propTypes.</span>location
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">location = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.Switch.prototype" id="apidoc.module.react-router-dom.Switch.prototype">module react-router-dom.Switch.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Switch.prototype.componentWillReceiveProps" id="apidoc.element.react-router-dom.Switch.prototype.componentWillReceiveProps">
+        function <span class="apidocSignatureSpan">react-router-dom.Switch.prototype.</span>componentWillReceiveProps
+        <span class="apidocSignatureSpan">(nextProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillReceiveProps(nextProps) {
+  (0, _warning2.default)(!(nextProps.location &amp;&amp; !this.props.location), '&lt;Switch&gt; elements should not change from uncontrolled to
+ controlled (or vice versa). You initially used no "location" prop and then provided one on a subsequent render.');
+
+  (0, _warning2.default)(!(!nextProps.location &amp;&amp; this.props.location), '&lt;Switch&gt; elements should not change from controlled to
+uncontrolled (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.Switch.prototype.render" id="apidoc.element.react-router-dom.Switch.prototype.render">
+        function <span class="apidocSignatureSpan">react-router-dom.Switch.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  var route = this.context.router.route;
+  var children = this.props.children;
+
+  var location = this.props.location || route.location;
+
+  var match = void 0,
+      child = void 0;
+  _react2.default.Children.forEach(children, function (element) {
+    if (!_react2.default.isValidElement(element)) return;
+
+    var _element$props = element.props,
+        pathProp = _element$props.path,
+        exact = _element$props.exact,
+        strict = _element$props.strict,
+        from = _element$props.from;
+
+    var path = pathProp || from;
+
+    if (match == null) {
+      child = element;
+      match = path ? (0, _matchPath2.default)(location.pathname, { path: path, exact: exact, strict: strict }) : route.match;
+    }
+  });
+
+  return match ? _react2.default.cloneElement(child, { location: location, computedMatch: match }) : null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.matchPath" id="apidoc.module.react-router-dom.matchPath">module react-router-dom.matchPath</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.matchPath.default" id="apidoc.element.react-router-dom.matchPath.default">
+        function <span class="apidocSignatureSpan">react-router-dom.matchPath.</span>default
+        <span class="apidocSignatureSpan">(pathname)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function matchPath(pathname) {
+  var options = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
+
+  if (typeof options === 'string') options = { path: options };
+
+  var _options = options,
+      _options$path = _options.path,
+      path = _options$path === undefined ? '/' : _options$path,
+      _options$exact = _options.exact,
+      exact = _options$exact === undefined ? false : _options$exact,
+      _options$strict = _options.strict,
+      strict = _options$strict === undefined ? false : _options$strict;
+
+  var _compilePath = compilePath(path, { end: exact, strict: strict }),
+      re = _compilePath.re,
+      keys = _compilePath.keys;
+
+  var match = re.exec(pathname);
+
+  if (!match) return null;
+
+  var url = match[0],
+      values = match.slice(1);
+
+  var isExact = pathname === url;
+
+  if (exact &amp;&amp; !isExact) return null;
+
+  return {
+    path: path, // the path pattern used to match
+    url: path === '/' &amp;&amp; url === '' ? '/' : url, // the matched portion of the URL
+    isExact: isExact, // whether or not we matched exactly
+    params: keys.reduce(function (memo, key, index) {
+      memo[key.name] = values[index];
+      return memo;
+    }, {})
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.react_router_dom" id="apidoc.module.react-router-dom.react_router_dom">module react-router-dom.react_router_dom</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.BrowserRouter" id="apidoc.element.react-router-dom.react_router_dom.BrowserRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>BrowserRouter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BrowserRouter() {
+	    var _temp, _this, _ret;
+
+	    _classCallCheck(this, BrowserRouter);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat
+(args))), _this), _this.history = (0, _createBrowserHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret
+);
+	  }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.HashRouter" id="apidoc.element.react-router-dom.react_router_dom.HashRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>HashRouter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HashRouter() {
+	    var _temp, _this, _ret;
+
+	    _classCallCheck(this, HashRouter);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat
+(args))), _this), _this.history = (0, _createHashHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+	  }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.Link" id="apidoc.element.react-router-dom.react_router_dom.Link">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>Link
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Link() {
+	    var _temp, _this, _ret;
+
+	    _classCallCheck(this, Link);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat
+(args))), _this), _this.handleClick = function (event) {
+	      if (_this.props.onClick) _this.props.onClick(event);
+
+	      if (!event.defaultPrevented &amp;&amp; // onClick prevented default
+	      event.button === 0 &amp;&amp; // ignore right clicks
+	      !_this.props.target &amp;&amp; // let browser handle "target=_blank" etc.
+	      !isModifiedEvent(event) // ignore clicks with modifier keys
+	      ) {
+	          event.preventDefault();
+
+	          var history = _this.context.router.history;
+	          var _this$props = _this.props,
+	              replace = _this$props.replace,
+	              to = _this$props.to;
+
+
+	          if (replace) {
+	            history.replace(to);
+	          } else {
+	            history.push(to);
+	          }
+	        }
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.MemoryRouter" id="apidoc.element.react-router-dom.react_router_dom.MemoryRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>MemoryRouter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MemoryRouter() {
+	    var _temp, _this, _ret;
+
+	    _classCallCheck(this, MemoryRouter);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat
+(args))), _this), _this.history = (0, _createMemoryHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret
+);
+	  }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.NavLink" id="apidoc.element.react-router-dom.react_router_dom.NavLink">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>NavLink
+        <span class="apidocSignatureSpan">(_ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NavLink(_ref) {
+	  var to = _ref.to,
+	      exact = _ref.exact,
+	      strict = _ref.strict,
+	      location = _ref.location,
+	      activeClassName = _ref.activeClassName,
+	      className = _ref.className,
+	      activeStyle = _ref.activeStyle,
+	      style = _ref.style,
+	      getIsActive = _ref.isActive,
+	      rest = _objectWithoutProperties(_ref, ['to', 'exact', 'strict', 'location', 'activeClassName', 'className', 'activeStyle', '
+style', 'isActive']);
+
+	  return _react2.default.createElement(_reactRouter.Route, {
+	    path: (typeof to === 'undefined' ? 'undefined' : _typeof(to)) === 'object' ? to.pathname : to,
+	    exact: exact,
+	    strict: strict,
+	    location: location,
+	    children: function children(_ref2) {
+	      var location = _ref2.location,
+	          match = _ref2.match;
+
+	      var isActive = !!(getIsActive ? getIsActive(match, location) : match);
+
+	      return _react2.default.createElement(_Link2.default, _extends({
+	        to: to,
+	        className: isActive ? [activeClassName, className].filter(function (i) {
+	          return i;
+	        }).join(' ') : className,
+	        style: isActive ? _extends({}, style, activeStyle) : style
+	      }, rest));
+	    }
+	  });
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.Prompt" id="apidoc.element.react-router-dom.react_router_dom.Prompt">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>Prompt
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Prompt() {
+	    _classCallCheck(this, Prompt);
+
+	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+	  }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.Redirect" id="apidoc.element.react-router-dom.react_router_dom.Redirect">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>Redirect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Redirect() {
+	    _classCallCheck(this, Redirect);
+
+	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+	  }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.Route" id="apidoc.element.react-router-dom.react_router_dom.Route">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>Route
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Route() {
+	    var _temp, _this, _ret;
+
+	    _classCallCheck(this, Route);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat
+(args))), _this), _this.state = {
+	      match: _this.computeMatch(_this.props, _this.context.router)
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.Router" id="apidoc.element.react-router-dom.react_router_dom.Router">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>Router
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Router() {
+	    var _temp, _this, _ret;
+
+	    _classCallCheck(this, Router);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat
+(args))), _this), _this.state = {
+	      match: _this.computeMatch(_this.props.history.location.pathname)
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.StaticRouter" id="apidoc.element.react-router-dom.react_router_dom.StaticRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>StaticRouter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StaticRouter() {
+	    var _temp, _this, _ret;
+
+	    _classCallCheck(this, StaticRouter);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat
+(args))), _this), _this.createHref = function (path) {
+	      return (0, _PathUtils.addLeadingSlash)(_this.props.basename + createURL(path));
+	    }, _this.handlePush = function (location) {
+	      var _this$props = _this.props,
+	          basename = _this$props.basename,
+	          context = _this$props.context;
+
+	      context.action = 'PUSH';
+	      context.location = addBasename(basename, createLocation(location));
+	      context.url = createURL(context.location);
+	    }, _this.handleReplace = function (location) {
+	      var _this$props2 = _this.props,
+	          basename = _this$props2.basename,
+	          context = _this$props2.context;
+
+	      context.action = 'REPLACE';
+	      context.location = addBasename(basename, createLocation(location));
+	      context.url = createURL(context.location);
+	    }, _this.handleListen = function () {
+	      return noop;
+	    }, _this.handleBlock = function () {
+	      return noop;
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.Switch" id="apidoc.element.react-router-dom.react_router_dom.Switch">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>Switch
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Switch() {
+	    _classCallCheck(this, Switch);
+
+	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+	  }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.matchPath" id="apidoc.element.react-router-dom.react_router_dom.matchPath">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>matchPath
+        <span class="apidocSignatureSpan">(pathname)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function matchPath(pathname) {
+	  var options = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
+
+	  if (typeof options === 'string') options = { path: options };
+
+	  var _options = options,
+	      _options$path = _options.path,
+	      path = _options$path === undefined ? '/' : _options$path,
+	      _options$exact = _options.exact,
+	      exact = _options$exact === undefined ? false : _options$exact,
+	      _options$strict = _options.strict,
+	      strict = _options$strict === undefined ? false : _options$strict;
+
+	  var _compilePath = compilePath(path, { end: exact, strict: strict }),
+	      re = _compilePath.re,
+	      keys = _compilePath.keys;
+
+	  var match = re.exec(pathname);
+
+	  if (!match) return null;
+
+	  var url = match[0],
+	      values = match.slice(1);
+
+	  var isExact = pathname === url;
+
+	  if (exact &amp;&amp; !isExact) return null;
+
+	  return {
+	    path: path, // the path pattern used to match
+	    url: path === '/' &amp;&amp; url === '' ? '/' : url, // the matched portion of the URL
+	    isExact: isExact, // whether or not we matched exactly
+	    params: keys.reduce(function (memo, key, index) {
+	      memo[key.name] = values[index];
+	      return memo;
+	    }, {})
+	  };
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.react_router_dom.withRouter" id="apidoc.element.react-router-dom.react_router_dom.withRouter">
+        function <span class="apidocSignatureSpan">react-router-dom.react_router_dom.</span>withRouter
+        <span class="apidocSignatureSpan">(Component)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function withRouter(Component) {
+	  var C = function C(props) {
+	    var wrappedComponentRef = props.wrappedComponentRef,
+	        remainingProps = _objectWithoutProperties(props, ['wrappedComponentRef']);
+
+	    return _react2.default.createElement(_Route2.default, { render: function render(routeComponentProps) {
+	        return _react2.default.createElement(Component, _extends({}, remainingProps, routeComponentProps, { ref: wrappedComponentRef
+ }));
+	      } });
+	  };
+
+	  C.displayName = 'withRouter(' + (Component.displayName || Component.name) + ')';
+	  C.WrappedComponent = Component;
+	  C.propTypes = {
+	    wrappedComponentRef: _propTypes2.default.func
+	  };
+
+	  return (0, _hoistNonReactStatics2.default)(C, Component);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-router-dom.withRouter" id="apidoc.module.react-router-dom.withRouter">module react-router-dom.withRouter</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-router-dom.withRouter.default" id="apidoc.element.react-router-dom.withRouter.default">
+        function <span class="apidocSignatureSpan">react-router-dom.withRouter.</span>default
+        <span class="apidocSignatureSpan">(Component)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function withRouter(Component) {
+  var C = function C(props) {
+    var wrappedComponentRef = props.wrappedComponentRef,
+        remainingProps = _objectWithoutProperties(props, ['wrappedComponentRef']);
+
+    return _react2.default.createElement(_Route2.default, { render: function render(routeComponentProps) {
+        return _react2.default.createElement(Component, _extends({}, remainingProps, routeComponentProps, { ref: wrappedComponentRef
+ }));
+      } });
+  };
+
+  C.displayName = 'withRouter(' + (Component.displayName || Component.name) + ')';
+  C.WrappedComponent = Component;
+  C.propTypes = {
+    wrappedComponentRef: _propTypes2.default.func
+  };
+
+  return (0, _hoistNonReactStatics2.default)(C, Component);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
